@@ -13,7 +13,7 @@ namespace luma.Models
    
         public Competition()
         {
-            this.Members = new HashSet<Member>();
+            this.Members = new List<Member>();
         }
 
         [Key]
@@ -45,6 +45,6 @@ namespace luma.Models
         public string Description { get; set; }
 
        
-        public virtual ICollection<Member> Members { get; set; }
+        public virtual List<Member> Members { get; set; }
     }
 }

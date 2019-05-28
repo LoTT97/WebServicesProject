@@ -12,7 +12,12 @@ namespace luma.Controllers
 {
     public class MemberController : Controller
     {
-        private LabModels db = new LabModels();
+        private LabModels db;
+
+        public MemberController()
+        {
+            db = new LabModels();
+        }
 
 
         public ActionResult Index(string search)

@@ -13,7 +13,7 @@
         
         public Member()
         {
-            this.Competitions = new HashSet<Competition>();
+            this.Competitions = new List<Competition>();
         }
 
         [Key]
@@ -52,6 +52,6 @@
         public virtual Club Club { get; set; }
 
        
-        public virtual ICollection<Competition> Competitions { get; set; }
+        public virtual List<Competition> Competitions { get; set; }
     }
 }

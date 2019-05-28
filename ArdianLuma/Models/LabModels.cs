@@ -14,9 +14,11 @@ namespace luma.Models
         }
 
 
-        public virtual DbSet<Member> Member { get; set; }
-        public virtual DbSet<Club> Club { get; set; }
-        public virtual DbSet<Competition> Competition { get; set; }
+        public DbSet<Member> Member { get; set; }
+        public DbSet<Club> Club { get; set; }
+        public DbSet<Competition> Competition { get; set; }
+        public DbSet<User> Users { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
