@@ -57,7 +57,7 @@ export const createTranslateLoader = (http: HttpClient) => {
             }
         }),
         HttpClientModule,
-        MatButtonModule, MatTableModule, MatInputModule, MatCheckboxModule,
+        MatButton, MatTableModule, MatInputModule, MatCheckboxModule,
         MatCardModule, MatSelectModule, MatToolbarModule,
         MatDialogModule, MatListModule,
         ReactiveFormsModule, FormsModule,

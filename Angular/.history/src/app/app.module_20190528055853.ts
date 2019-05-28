@@ -6,15 +6,7 @@ import {
     MatIconModule,
     MatListModule,
     MatSidenavModule,
-    MatToolbarModule,
-    MatButton,
-    MatTableModule,
-    MatInputModule,
-    MatCardModule,
-    MatSelectModule,
-    MatDialog,
-    MatDialogModule,
-    MatCheckboxModule
+    MatToolbarModule
 } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,9 +17,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { FlexLayoutModule } from '@angular/flex-layout';
 // AoT requires an exported function for factories
 export const createTranslateLoader = (http: HttpClient) => {
     /* for development
@@ -42,7 +31,6 @@ export const createTranslateLoader = (http: HttpClient) => {
 @NgModule({
     declarations: [AppComponent, RegisterComponent],
     imports: [
-        CommonModule,
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
@@ -55,13 +43,7 @@ export const createTranslateLoader = (http: HttpClient) => {
                 useFactory: createTranslateLoader,
                 deps: [HttpClient]
             }
-        }),
-        HttpClientModule,
-        MatButtonModule, MatTableModule, MatInputModule, MatCheckboxModule,
-        MatCardModule, MatSelectModule, MatToolbarModule,
-        MatDialogModule, MatListModule,
-        ReactiveFormsModule, FormsModule,
-        FlexLayoutModule.withConfig({addFlexToParent: false})
+        })
     ],
     providers: [],
     bootstrap: [AppComponent]

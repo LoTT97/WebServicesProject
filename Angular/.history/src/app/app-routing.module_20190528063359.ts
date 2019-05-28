@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './shared/guard/auth.guard';
-import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
     {
@@ -15,7 +14,7 @@ const routes: Routes = [
     },
     {
       path: 'register',
-      component: RegisterComponent
+      loadChildren: './register/register.module#RegisterModule'
     }
 ];
 

@@ -7,11 +7,13 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using ClubCompetition.Models;
 
 namespace ClubCompetition.Controllers.API
 {
+    [EnableCors("http://localhost:4200", headers: "*", methods: "*")]
     public class CompetitionsController : ApiController
     {
         private LabModels db = new LabModels();
