@@ -20,7 +20,7 @@ namespace ClubCompetition.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext() : base("name=Lab1")
+        public ApplicationDbContext() : base("name=ClubCompetitionDb")
     
         {
         }

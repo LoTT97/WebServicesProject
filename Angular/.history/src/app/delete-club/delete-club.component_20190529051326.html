@@ -1,0 +1,32 @@
+<div style="align-content: center">
+<mat-card-header>
+  <mat-card-title>Are you sure you want to delete this club</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+
+  <mat-list>
+    <mat-list-item>
+      <b>Club Name:</b>{{club.ClubName}}
+    </mat-list-item>
+    <mat-list-item>
+      <b>Location:</b>{{club.Location}}
+    </mat-list-item>
+    <mat-list-item>
+      <b>Motto:</b>{{club.Motto}}
+    </mat-list-item>
+    <mat-list-item>
+      <b>Established Date:</b>{{club.EstablishedDate}}
+    </mat-list-item>
+  </mat-list>
+
+</mat-card-content>
+
+<mat-card-actions>
+  <button mat-flat-button color='primary' (click)='close()'>
+    Close
+  </button>
+  <button mat-flat-button color='primary' (click)='confirm()'>
+    Confirm
+  </button>
+</mat-card-actions>
+</div>

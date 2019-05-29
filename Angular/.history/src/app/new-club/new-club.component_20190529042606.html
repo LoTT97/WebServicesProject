@@ -1,0 +1,31 @@
+<mat-card>
+  <span>Create new Club</span>
+  <form [formGroup]="clubForm" (onSubmit)="onSubmit()">
+
+    <mat-form-field class="new-entry-field">
+      <input matInput placeholder="ClubName" formControlName="ClubName">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field class="new-entry-field">
+        <input matInput placeholder="Location" formControlName="Location">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="new-entry-field">
+          <input matInput placeholder="Motto" formControlName="Motto">
+        </mat-form-field>
+        <br>
+
+    <mat-form-field class="new-entry-field">
+      <input matInput placeholder="EstablishedDate" formControlName="EstablishedDate">
+    </mat-form-field>
+    <br>
+
+    <button mat-raised-button [disabled]='!entryForm.valid' (click)="onSubmit()">
+      Create new Club
+    </button>
+
+
+  </form>
+
+</mat-card>

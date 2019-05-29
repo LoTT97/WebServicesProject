@@ -9,7 +9,7 @@ namespace ClubCompetition.Models
     {
         
         public LabModels()
-            : base("name=Lab1") 
+            : base("name=ClubCompetitionDb") 
         {
         }
 
