@@ -34,7 +34,6 @@ import { AuthService } from './shared/services';
 import { ClubService } from './shared/services/club.service';
 import { CompetitionService } from './shared/services/competition.service';
 import { MemeberService } from './shared/services/memeber.service';
-import { NewClubComponent } from './new-club/new-club.component';
 // AoT requires an exported function for factories
 export const createTranslateLoader = (http: HttpClient) => {
     /* for development
@@ -47,7 +46,7 @@ export const createTranslateLoader = (http: HttpClient) => {
 };
 
 @NgModule({
-    declarations: [AppComponent, RegisterComponent, UpdateClubComponent, DeleteClubComponent, NewClubComponent],
+    declarations: [AppComponent, RegisterComponent, UpdateClubComponent, DeleteClubComponent],
     imports: [
         CommonModule,
         BrowserModule,

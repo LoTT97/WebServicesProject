@@ -1,0 +1,34 @@
+<h2 mat-dialog-title>Update Club</h2>
+
+<mat-dialog-content [formGroup]="form">
+
+  <mat-form-field class="new-entry-field">
+    <input matInput placeholder="ClubName" formControlName="ClubName">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="new-entry-field">
+    <input matInput placeholder="Location" formControlName="Location">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="new-entry-field">
+    <input matInput placeholder="Motto" formControlName="Motto">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="new-entry-field">
+    <input matInput placeholder="EstablishedDate" formControlName="EstablishedDate">
+  </mat-form-field>
+  <br>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button (click)="close()" mat-raised-button>
+    Close
+  </button>
+  <button mat-raised-button (click)="save()" color="primary">
+    Save
+  </button>
+</mat-dialog-actions>

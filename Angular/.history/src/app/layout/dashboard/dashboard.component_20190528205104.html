@@ -15,7 +15,6 @@
 
 <div class="mb-20" flFlex flexLayout="row" flexLayout.lt-md="column">
     <div fxFlex>
-      <button mat-button style="background-color: #0FF"> NEW CLUB </button>
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
             <ng-container matColumnDef="ClubName">
                 <th mat-header-cell *matHeaderCellDef> Club Name </th>
@@ -32,17 +31,6 @@
             <ng-container matColumnDef="EstablishedDate">
                 <th mat-header-cell *matHeaderCellDef> Established Date </th>
                 <td mat-cell *matCellDef="let element"> {{element.EstablishedDate}} </td>
-            </ng-container>
-            <ng-container matColumnDef="Actions">
-              <th mat-header-cell *matHeaderCellDef> Actions </th>
-              <td mat-cell *matCellDef="let element">
-                <button mat-button color='primary' (click)="updateClub(element)">
-                  <b>Edit</b>
-                </button>
-                <button mat-button color='primary' [routerLink]="['/delete-club', element.ClubId]">
-                  <b>Delete</b>
-                </button>
-              </td>
             </ng-container>
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
